@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive-Portfolio</title>
+    <link  rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/a5ce79f705.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/port.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact </a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars"onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>  <span>Front-end</span> Developer</p>
+                <h1> Hi! I am Vamsi <span>Krishna</span></h1>
+            </div>
+        </div>
+    </div>
+    <!--------------About Section------------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/Pic1.png" class="Pic">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-tit"> About Me </h1>
+                    <p>Hello my name is Vamsi krishna Valluri and I completed my Bachelor's Degree at Sri Venkateswara Engineering college in 2024.I have an Interest on learning new technologies which are ruling the world like AI,Machine Learning,Cloud Computing,Full stack Development.My short term goal is to get a job in a reputated company and My long term goal is to achieve a higher position on that company.My Hobbies are Listening music,watching movies,playing cricket.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('languages')"> Languages</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="education">
+                        <ul>
+                            <li><span>2021-2024</span><br>B.Tech</li>
+                            <li><span>2018-2021</span><br>Diploma</li>
+                            <li><span>2017-2018</span><br>Secondary Education</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="languages">
+                        <ul>
+                            <li><span>English</span><br>Intermediate Profiency</li>
+                            <li><span>Telugu</span><br>Native or bilingual proficiency</li>
+                            <li><span>Hindi</span><br>Limited Proficiency<br></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <a href="Images/Vamsi's Resume.pdf" download class="btn1"> Download CV </a>   
+    </div>
+    <!--------------------Skills Section------------------------>
+    <div id="skills">
+        <div class="container">
+            <h1 class="sub-title"> Skills</h1>
+            <div class="skills-list">
+                <div>
+                    <i class="fa-sharp fa-solid fa-c"></i>
+                    <h2> C-programming </h2>
+                    <p> It is a High Level Programming Language </p>
+                    <a target="_blank" href="https://www.w3schools.com/c/">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h2> Python </h2>
+                    <p> Python is a scripting and Interprated Language</p>
+                    <a target="_blank" href="https://www.w3schools.com/python/">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-java"></i>
+                    <h2> Java </h2>
+                    <p> Java is a High-level  and Object-Oriented Programming Language</p>
+                    <a target="_blank" href="https://www.w3schools.com/java/">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2> Web Technologies</h2>
+                    <p>It includes HTML,CSS,<br>Javascript,Bootstrap and<br>ReactJs</p>
+                    <a target="_blank" href="https://www.w3schools.com/tutorials/">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------Project Section-------------------->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="projects-list">
+                <div>
+                    <i class="fa-solid fa-user-tie"></i>
+                    <h2> Responsive Portfolio Website </h2>
+                    <p class="list-cl">TechStack Used:<ul>
+                        <li> Html</li>
+                        <li> CSS</li>
+                        <li> Bootstrap</li>
+                        <li> Javascript</li>
+                    </ul></p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-amazon"></i>
+                    <h2>Amazon Clone Website</h2>
+                    <p class="list-cl">TechStack Used:<ul>
+                        <li> Html</li>
+                        <li> CSS</li>
+                        <li> Javascript</li>
+                    </ul></p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-cloud-sun-rain"></i>
+                    <h2> Weather App </h2>
+                    <p class="list-cl">TechStack Used:<ul>
+                        <li> Html</li>
+                        <li> CSS</li>
+                        <li> Bootstrap</li>
+                        <li> Javascript</li>
+                        <li> Reactjs</li>
+                    </ul></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------------Contact Section-------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>vamsikrishnavalluri106@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>8096366982</p>
+                    <div class="social-icons">
+                        <a target="_blank" href="https://www.instagram.com/_vamsi_chowdary_2002?igsh=MWMzaHVwN2xmNGQyZw=="><i class="fa-brands fa-instagram"></i></a>
+                        <a target="_blank" href="https://www.facebook.com/vamsi.valluri.98/"><i class="fa-brands fa-facebook"></i></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/vamsi-krishna-valluri-a59a80250"><i class="fa-brands fa-linkedin"></i></a>
+                        <a target="_blank" href="https://github.com/Vamsi80963"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Enter Your Name" required>
+                        <input type="email" name="Email"placeholder="Enter Your Email"required>
+                        <textarea name="Message" rows="6" placeholder="Enter your Message"></textarea>
+                        <button type="submit" class="btn ">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p> Copyright me<i class="fa-regular fa-copyright"></i> Vamsi Krishna Valluri </p>
+        </div>
+    </div>
+<script> 
+    var sidemeu=document.getElementById("sidemenu");
+function openmenu(){
+    sidemeu.style.right="0";
+}
+function closemenu(){
+    sidemeu.style.right="-200px";
+}
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx7hHOvyePZlXim7VZ__Louwwh6B9ymaRAxvOhpt8Kl9qVW5kkgC2QtAU4q0YNdApZoSg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message Sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>    
+</body>
+</html>
